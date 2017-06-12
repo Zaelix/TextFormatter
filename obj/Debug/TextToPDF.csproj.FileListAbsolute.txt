@@ -1,0 +1,12 @@
+E:\Desktop Stuff\Programming\C#\TextPDF\TextPDF\TextPDF\bin\Debug\TextToPDF.dll
+E:\Desktop Stuff\Programming\C#\TextPDF\TextPDF\TextPDF\bin\Debug\TextToPDF.pdb
+E:\Desktop Stuff\Programming\C#\TextPDF\TextPDF\TextPDF\obj\Debug\TextToPDF.dll
+E:\Desktop Stuff\Programming\C#\TextPDF\TextPDF\TextPDF\obj\Debug\TextToPDF.pdb
+E:\Desktop Stuff\Programming\C#\TextPDF\TextPDF\TextPDF\bin\Debug\TextToPDF.exe.config
+E:\Desktop Stuff\Programming\C#\TextPDF\TextPDF\TextPDF\obj\Debug\TextToPDF.csprojResolveAssemblyReference.cache
+E:\Desktop Stuff\Programming\C#\TextPDF_BLEH\bin\Debug\TextToPDF.exe.config
+E:\Desktop Stuff\Programming\C#\TextPDF_BLEH\obj\Debug\TextToPDF.pdb
+E:\Desktop Stuff\Programming\C#\TextPDF_BLEH\obj\Debug\TextToPDF.csprojResolveAssemblyReference.cache
+E:\Desktop Stuff\Programming\C#\TextPDF_BLEH\bin\Debug\TextToPDF.exe
+E:\Desktop Stuff\Programming\C#\TextPDF_BLEH\bin\Debug\TextToPDF.pdb
+E:\Desktop Stuff\Programming\C#\TextPDF_BLEH\obj\Debug\TextToPDF.exe

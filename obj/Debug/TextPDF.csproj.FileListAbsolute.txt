@@ -1,0 +1,5 @@
+E:\Desktop Stuff\Programming\C#\TextPDF\TextPDF\TextPDF\bin\Debug\TextPDF.dll
+E:\Desktop Stuff\Programming\C#\TextPDF\TextPDF\TextPDF\bin\Debug\TextPDF.pdb
+E:\Desktop Stuff\Programming\C#\TextPDF\TextPDF\TextPDF\obj\Debug\TextPDF.csprojResolveAssemblyReference.cache
+E:\Desktop Stuff\Programming\C#\TextPDF\TextPDF\TextPDF\obj\Debug\TextPDF.dll
+E:\Desktop Stuff\Programming\C#\TextPDF\TextPDF\TextPDF\obj\Debug\TextPDF.pdb
