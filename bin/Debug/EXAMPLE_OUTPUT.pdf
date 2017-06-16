@@ -1,0 +1,89 @@
+%PDF-1.4
+%%EOF
+
+6 0 obj
+<<
+ /Type /Catalog
+ /Pages 5 0 R
+>>
+endobj
+
+1 0 obj
+<<
+ /Type /Page
+ /Parent 5 0 R
+ /MediaBox [ 0 0 612 792 ]
+ /Resources 3 0 R
+ /Contents 2 0 R
+>>
+endobj
+
+4 0 obj
+<<
+ /Type /Font
+ /Subtype /Type1
+ /Name /F1
+ /BaseFont /Helvetica
+>>
+endobj
+
+2 0 obj
+<<
+ /Length 53
+>>
+stream
+BT
+ /F1 34 Tf
+ 1 0 0 1 10 400 Tm
+ (BYE World ONIONS with santa claus)Tj
+ /F1 14 Tf
+ 1 0 0 1 10 370 Tm
+ (SAM magnolia diamond forever be problematic epsilon)Tj
+ET
+endstream
+endobj
+
+
+
+3 0 obj
+<<
+ /ProcSet[/PDF/Text]
+ /Font <</F1 4 0 R >>
+>>
+endobj
+
+7 0 obj
+<<
+ /Type /Page
+ /Parent 5 0 R
+ /MediaBox [ 0 0 612 792 ]
+ /Resources 3 0 R
+ /Contents 8 0 R
+>>
+endobj
+
+8 0 obj
+<<
+ /Length 53
+>>
+stream
+BT
+ /F1 55 Tf
+ 1 0 0 1 0 400 Tm
+ (What doth life?\r\nAAA)Tj
+ /F1 14 Tf
+ 1 0 0.2 1 10 370 Tm
+ (Puppies...)Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+ /Type /Pages
+ /Kids [ 1 0 R 7 0 R]
+ /Count 2
+>>
+endobj
+
+%%EOF

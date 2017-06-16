@@ -10,3 +10,9 @@ E:\Desktop Stuff\Programming\C#\TextPDF_BLEH\obj\Debug\TextToPDF.csprojResolveAs
 E:\Desktop Stuff\Programming\C#\TextPDF_BLEH\bin\Debug\TextToPDF.exe
 E:\Desktop Stuff\Programming\C#\TextPDF_BLEH\bin\Debug\TextToPDF.pdb
 E:\Desktop Stuff\Programming\C#\TextPDF_BLEH\obj\Debug\TextToPDF.exe
+E:\Desktop Stuff\Programming\C#\TextToPDF\bin\Debug\TextToPDF.exe.config
+E:\Desktop Stuff\Programming\C#\TextToPDF\obj\Debug\TextToPDF.exe
+E:\Desktop Stuff\Programming\C#\TextToPDF\obj\Debug\TextToPDF.pdb
+E:\Desktop Stuff\Programming\C#\TextToPDF\bin\Debug\TextToPDF.exe
+E:\Desktop Stuff\Programming\C#\TextToPDF\bin\Debug\TextToPDF.pdb
+E:\Desktop Stuff\Programming\C#\TextToPDF\obj\Debug\TextToPDF.csprojResolveAssemblyReference.cache

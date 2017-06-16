@@ -33,11 +33,13 @@ namespace TTPDF
 
             // Create a new PdfWriter
             PdfWriter pdfWriter = new PdfWriter(842.0f, 1190.0f, 10.0f, 20.0f);
+            PDFMaker pdf = new TTPDF.PDFMaker();
 
             if (filePath.Length > 0)
             {
                 //Write to a PDF format file
                 pdfWriter.Write(filePath);
+                pdf.Write(filePath);
             }
         }
     }
@@ -104,7 +106,7 @@ namespace TTPDF
         private long mStreamStart;
 
         //files
-        private string outputStreamPath = App.outputDirectory+@"\"+App.outputFileName;
+        private string outputStreamPath = App.outputDirectory + @"\" + "Control_Output.pdf";//App.outputFileName;
         public FileStream outFileStream;
 
 
@@ -349,7 +351,7 @@ namespace TTPDF
                     }
                     else
                     {
-                        //Is there a page break "1"?
+                        //Is there a page break "@"?
                         int cmpPageVal = String.Compare(strLine.Substring(0, 1), "@");
 
                         //Is there a Formfeed?

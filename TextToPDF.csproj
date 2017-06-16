@@ -77,6 +77,7 @@
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="PDFMaker.cs" />
     <Compile Include="TextToPDF.cs" />
   </ItemGroup>
   <ItemGroup>
