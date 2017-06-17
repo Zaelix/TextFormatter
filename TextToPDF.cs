@@ -11,7 +11,7 @@ namespace TTPDF
         public static string inputFileName;
         public static string outputDirectory;
         public static string outputFileName;
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
             string exePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
             //string path = System.Reflection.Assembly.GetExecutingAssembly().CodeBase;
@@ -41,6 +41,7 @@ namespace TTPDF
                 pdfWriter.Write(filePath);
                 pdf.Write(filePath);
             }
+            return 0;
         }
     }
     class PdfPage
