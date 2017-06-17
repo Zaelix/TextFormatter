@@ -14,7 +14,7 @@ _________________________________________________________________________
 <<25>>Quis Nostrud Exercitation
 <<12>>
 _________________________________________________________________________
-167234		ullamco laboris nisi ut aliquip ex ea commodo consequat
+167234          ullamco laboris nisi ut aliquip ex ea commodo consequat
 447832		Duis aute irure dolor
 936482		in reprehenderit in voluptate
 167234		ullamco laboris nisi ut aliquip ex ea commodo consequat

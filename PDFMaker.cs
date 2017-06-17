@@ -19,6 +19,7 @@ namespace TTPDF
         //string fileStart = "%PDF-1.4\r\n%%EOF\r\n";
         public static string pagesRefObj = "";
         public static string resourceRefObj = "";
+        public static string catalogRefObj = "";
 
         public int Write(string filePath)
         {
@@ -84,7 +85,10 @@ namespace TTPDF
             }
 
             //Create Catalog object to reference Pages object.
-            FileStreamWrite(outFileStream, CreateCatalogObject());
+            FileStreamWrite(outFileStream, CreateCatalogObject() + "\r\n");
+
+            //Create Trailer Object
+            FileStreamWrite(outFileStream, CreateTrailerObject() + "\r\n");
 
             //End the PDF file
             FileStreamWrite(outFileStream, @"%%EOF");               
@@ -129,8 +133,13 @@ namespace TTPDF
         }
         private static string CreateCatalogObject() {
             int obj_ID = PDFMaker.GetObjCount();
+            catalogRefObj = obj_ID + " 0 R";
             PDFMaker.IncrementObjCount();
             string obj = obj_ID + " 0 obj\r\n<<\r\n/Type /Catalog\r\n/Pages " + pagesRefObj + "\r\n>>\r\nendobj\r\n";
+            return obj;
+        }
+        public static string CreateTrailerObject(){
+            string obj = "trailer\r\n<<\r\n/Root " + catalogRefObj + "\r\n/Size " + obj_Count + "\r\n>>\r\n";
             return obj;
         }
         public static void IncrementObjCount(){
@@ -144,6 +153,15 @@ namespace TTPDF
         }
         public static int GetPageCount(){
             return page_Count;
+        }
+        public static string CreateXRef() {
+            string obj = "xref\r\n0 8\r\n0000000000 65535 f\r\n";
+            for (int i = 0; i< obj_Count; i++) {
+                obj = obj + "0000000042 00000 n\r\n";
+            }
+            //Trailer
+            obj = "startxref\r\n42\r\n";
+            return obj;
         }
     }
     public class Page {
