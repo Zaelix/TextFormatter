@@ -1,18 +1,18 @@
-<<30>>Lorem Ipsum Dolor Sit Amet
+<PDF_FONT_TAG_S>25<PDF_FONT_TAG_E>Lorem Ipsum Dolor Sit Amet
 	Consectetur
-<<12>>
+<PDF_FONT_TAG_S>12<PDF_FONT_TAG_E>
 _________________________________________________________________________
-<<25>>Adipiscing Elit
-<<12>>
+<PDF_FONT_TAG_S>25<PDF_FONT_TAG_E>Adipiscing Elit
+<PDF_FONT_TAG_S>12<PDF_FONT_TAG_E>
 _________________________________________________________________________
 768324		Sed do eiusmod tempor
 635274-77	ut labore et dolore magna aliqua
 768342		Ut enim ad minim veniam
 @
-<<12>>
+<PDF_FONT_TAG_S>12<PDF_FONT_TAG_E>
 _________________________________________________________________________
-<<25>>Quis Nostrud Exercitation
-<<12>>
+<PDF_FONT_TAG_S>25<PDF_FONT_TAG_E>Quis Nostrud Exercitation
+<PDF_FONT_TAG_S>12<PDF_FONT_TAG_E>
 _________________________________________________________________________
 167234          ullamco laboris nisi ut aliquip ex ea commodo consequat
 447832		Duis aute irure dolor

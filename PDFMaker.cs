@@ -63,7 +63,7 @@ namespace TTPDF
                     strLine = strLine.Replace("@", "");
                     height = 640;
                 }
-                if (strLine.Contains(@"<<")){
+                if (strLine.Contains(@"<PDF_FONT_TAG_S>")){
                     strLine = pages[page_Count-1].ChangeFontSize(strLine);
                 }
                 height = height - pages[page_Count - 1].GetFontSize();
@@ -210,11 +210,11 @@ namespace TTPDF
         }
         public string ChangeFontSize(string fsTagLine)
         {
-            int i = fsTagLine.IndexOf("<<");
-            int j = fsTagLine.IndexOf(">>");
-            string fsS = fsTagLine.Substring(i + 2, j - 2);
+            int i = fsTagLine.IndexOf("<PDF_FONT_TAG_S>");
+            int j = fsTagLine.IndexOf("<PDF_FONT_TAG_E>");
+            string fsS = fsTagLine.Substring(i + 16, j - 16);
             int newFS = int.Parse(fsS);
-            fsTagLine = fsTagLine.Remove(i, 4 + fsS.Length);
+            fsTagLine = fsTagLine.Remove(i, 32 + fsS.Length);
             fontSize = newFS;
             return fsTagLine;
         }
