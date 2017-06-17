@@ -112,7 +112,7 @@ namespace TTPDF
         }
         public static string CreateFontObject() {
             int fontID = PDFMaker.GetObjCount();
-            string objContent = fontID + " 0 obj\r\n<<\r\n/Type /Font\r\n/Subtype /Type1\r\n/Name /F1\r\n/BaseFont /Helvetica\r\n>>\r\nendobj\r\n";
+            string objContent = fontID + " 0 obj\r\n<<\r\n/Type /Font\r\n/Subtype /Type1\r\n/Name /F1\r\n/BaseFont /Courier\r\n>>\r\nendobj\r\n";
             PDFMaker.IncrementObjCount();
             fonts[0] = fontID + " 0 R";
             return objContent;
