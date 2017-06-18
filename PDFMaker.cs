@@ -69,7 +69,7 @@ namespace TTPDF
             while (sr.Peek() >= 0)
             {
                 strLine = sr.ReadLine();
-                if (strLine.Contains(@"<PDF_NEW_PAGE>") || height <= 45) {
+                if (strLine.Contains(@"<PDF_NEW_PAGE>") || height <= 50) {
                     FileStreamWrite(outFileStream, pages[page_Count-1].EndContentObj()+ "\r\n");
                     IncrementPageCount();
                     pages[page_Count-1] = new Page(480, 640);
