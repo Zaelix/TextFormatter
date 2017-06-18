@@ -84,7 +84,7 @@ namespace TTPDF
                 if (strLine.Contains(@"<PDF_FONT_TAG_S>")){
                     strLine = pages[page_Count-1].ChangeFontSize(strLine);
                 }
-                height = height - pages[page_Count - 1].GetFontSize()-2;
+                height = height - pages[page_Count - 1].GetFontSize()-1;
                 FileStreamWrite(outFileStream, pages[page_Count - 1].InsertContentLine(strLine, height));
             }
             FileStreamWrite(outFileStream, pages[page_Count-1].EndContentObj());
