@@ -1,20 +1,20 @@
 THIS IS A HEADER
 THIS IS A FOOTER
 <PDF_FONT_TAG_S>18<PDF_FONT_TAG_E>Lorem Ipsum Dolor Sit Amet
-	Consectetur
+Consectetur
 _________________________________________________________________________
-<PDF_FONT_TAG_S>25<PDF_FONT_TAG_E>Adipiscing Elit(
+<PDF_FONT_TAG_S>25<PDF_FONT_TAG_E>Adipiscing Elit
 <PDF_FONT_TAG_S>12<PDF_FONT_TAG_E>
 _________________________________________________________________________
-768324		Sed do eiusmod tempor ]
-635274-77	ut labore et dolore magna aliqua [
-768342		Ut enim ad minim veniam )
+768324		Sed do eiusmod tempor 
+635274-77	ut labore et dolore magna aliqua 
+768342		Ut enim ad minim veniam 
 <PDF_FONT_TAG_S>12<PDF_FONT_TAG_E>
 _________________________________________________________________________
-<PDF_FONT_TAG_S>25<PDF_FONT_TAG_E>Quis Nostrud Exercitation {
-<PDF_FONT_TAG_S>12<PDF_FONT_TAG_E>
+<PDF_FONT_TAG_S>25<PDF_FONT_TAG_E>Quis Nostrud Exercitation 
+<PDF_FONT_TAG_S>6<PDF_FONT_TAG_E>
 _________________________________________________________________________
-167234          ullamco laboris nisi ut aliquip ex ea commodo consequat }
+167234          ullamco laboris nisi ut aliquip ex ea commodo consequat 
 447832		Duis aute irure dolor
 936482		in reprehenderit in voluptate
 167234		ullamco laboris nisi ut aliquip ex ea commodo consequat

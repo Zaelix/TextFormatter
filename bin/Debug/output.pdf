@@ -1,4 +1,4 @@
-%PDF-1.4
+%PDF-1.6
 1 0 obj
 <<
 /Type /Font
@@ -27,18 +27,19 @@ BT
 /F1 10 Tf
 1 0 0 1 20 20 Tm
 (THIS IS A FOOTER)Tj
+20 35 m 460 35 l h S
 /F1 18 Tf
 1 0 0 1 20 582 Tm
 (Lorem Ipsum Dolor Sit Amet)Tj
 /F1 18 Tf
 1 0 0 1 20 564 Tm
-(	Consectetur)Tj
+(Consectetur)Tj
 /F1 18 Tf
 1 0 0 1 20 546 Tm
 (_________________________________________________________________________)Tj
 /F1 25 Tf
 1 0 0 1 20 521 Tm
-(Adipiscing Elit\()Tj
+(Adipiscing Elit)Tj
 /F1 12 Tf
 1 0 0 1 20 509 Tm
 ()Tj
@@ -47,13 +48,13 @@ BT
 (_________________________________________________________________________)Tj
 /F1 12 Tf
 1 0 0 1 20 485 Tm
-(768324		Sed do eiusmod tempor ])Tj
+(768324		Sed do eiusmod tempor )Tj
 /F1 12 Tf
 1 0 0 1 20 473 Tm
-(635274-77	ut labore et dolore magna aliqua [)Tj
+(635274-77	ut labore et dolore magna aliqua )Tj
 /F1 12 Tf
 1 0 0 1 20 461 Tm
-(768342		Ut enim ad minim veniam \))Tj
+(768342		Ut enim ad minim veniam )Tj
 /F1 12 Tf
 1 0 0 1 20 449 Tm
 ()Tj
@@ -62,100 +63,193 @@ BT
 (_________________________________________________________________________)Tj
 /F1 25 Tf
 1 0 0 1 20 412 Tm
-(Quis Nostrud Exercitation {)Tj
-/F1 12 Tf
-1 0 0 1 20 400 Tm
+(Quis Nostrud Exercitation )Tj
+/F1 6 Tf
+1 0 0 1 20 406 Tm
 ()Tj
-/F1 12 Tf
-1 0 0 1 20 388 Tm
+/F1 6 Tf
+1 0 0 1 20 400 Tm
 (_________________________________________________________________________)Tj
-/F1 12 Tf
-1 0 0 1 20 376 Tm
-(167234          ullamco laboris nisi ut aliquip ex ea commodo consequat })Tj
-/F1 12 Tf
-1 0 0 1 20 364 Tm
+/F1 6 Tf
+1 0 0 1 20 394 Tm
+(167234          ullamco laboris nisi ut aliquip ex ea commodo consequat )Tj
+/F1 6 Tf
+1 0 0 1 20 388 Tm
 (447832		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 352 Tm
+/F1 6 Tf
+1 0 0 1 20 382 Tm
 (936482		in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 340 Tm
+/F1 6 Tf
+1 0 0 1 20 376 Tm
 (167234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 328 Tm
+/F1 6 Tf
+1 0 0 1 20 370 Tm
 (447842		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 316 Tm
+/F1 6 Tf
+1 0 0 1 20 364 Tm
 (933482-02	in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 304 Tm
+/F1 6 Tf
+1 0 0 1 20 358 Tm
 (888234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 292 Tm
+/F1 6 Tf
+1 0 0 1 20 352 Tm
 (474532		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 280 Tm
+/F1 6 Tf
+1 0 0 1 20 346 Tm
 (936482		in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 268 Tm
+/F1 6 Tf
+1 0 0 1 20 340 Tm
 (557234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 256 Tm
+/F1 6 Tf
+1 0 0 1 20 334 Tm
 (231832		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 244 Tm
+/F1 6 Tf
+1 0 0 1 20 328 Tm
 (936482-01	in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 232 Tm
+/F1 6 Tf
+1 0 0 1 20 322 Tm
 (167234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 220 Tm
+/F1 6 Tf
+1 0 0 1 20 316 Tm
 (455832		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 208 Tm
+/F1 6 Tf
+1 0 0 1 20 310 Tm
 (936482		in reprehenderit in voluptate)Tj
-/F1 12 Tf
+/F1 6 Tf
+1 0 0 1 20 304 Tm
+(324234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
+/F1 6 Tf
+1 0 0 1 20 298 Tm
+(447832		Duis aute irure dolor)Tj
+/F1 6 Tf
+1 0 0 1 20 292 Tm
+(936455		in reprehenderit in voluptate)Tj
+/F1 6 Tf
+1 0 0 1 20 286 Tm
+(167234          ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
+/F1 6 Tf
+1 0 0 1 20 280 Tm
+(447832		Duis aute irure dolor)Tj
+/F1 6 Tf
+1 0 0 1 20 274 Tm
+(936482		in reprehenderit in voluptate)Tj
+/F1 6 Tf
+1 0 0 1 20 268 Tm
+(167234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
+/F1 6 Tf
+1 0 0 1 20 262 Tm
+(447842		Duis aute irure dolor)Tj
+/F1 6 Tf
+1 0 0 1 20 256 Tm
+(933482-02	in reprehenderit in voluptate)Tj
+/F1 6 Tf
+1 0 0 1 20 250 Tm
+(888234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
+/F1 6 Tf
+1 0 0 1 20 244 Tm
+(474532		Duis aute irure dolor)Tj
+/F1 6 Tf
+1 0 0 1 20 238 Tm
+(936482		in reprehenderit in voluptate)Tj
+/F1 6 Tf
+1 0 0 1 20 232 Tm
+(557234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
+/F1 6 Tf
+1 0 0 1 20 226 Tm
+(231832		Duis aute irure dolor)Tj
+/F1 6 Tf
+1 0 0 1 20 220 Tm
+(936482-01	in reprehenderit in voluptate)Tj
+/F1 6 Tf
+1 0 0 1 20 214 Tm
+(167234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
+/F1 6 Tf
+1 0 0 1 20 208 Tm
+(455832		Duis aute irure dolor)Tj
+/F1 6 Tf
+1 0 0 1 20 202 Tm
+(936482		in reprehenderit in voluptate)Tj
+/F1 6 Tf
 1 0 0 1 20 196 Tm
 (324234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
+/F1 6 Tf
+1 0 0 1 20 190 Tm
+(447832		Duis aute irure dolor)Tj
+/F1 6 Tf
 1 0 0 1 20 184 Tm
-(447832		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 172 Tm
 (936455		in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 160 Tm
+/F1 6 Tf
+1 0 0 1 20 178 Tm
 (167234          ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 148 Tm
+/F1 6 Tf
+1 0 0 1 20 172 Tm
 (447832		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 136 Tm
+/F1 6 Tf
+1 0 0 1 20 166 Tm
 (936482		in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 124 Tm
+/F1 6 Tf
+1 0 0 1 20 160 Tm
 (167234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 112 Tm
+/F1 6 Tf
+1 0 0 1 20 154 Tm
 (447842		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 100 Tm
+/F1 6 Tf
+1 0 0 1 20 148 Tm
 (933482-02	in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 88 Tm
+/F1 6 Tf
+1 0 0 1 20 142 Tm
 (888234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 76 Tm
+/F1 6 Tf
+1 0 0 1 20 136 Tm
 (474532		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 64 Tm
+/F1 6 Tf
+1 0 0 1 20 130 Tm
 (936482		in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 52 Tm
+/F1 6 Tf
+1 0 0 1 20 124 Tm
 (557234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 40 Tm
+/F1 6 Tf
+1 0 0 1 20 118 Tm
 (231832		Duis aute irure dolor)Tj
+/F1 6 Tf
+1 0 0 1 20 112 Tm
+(936482-01	in reprehenderit in voluptate)Tj
+/F1 6 Tf
+1 0 0 1 20 106 Tm
+(167234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
+/F1 6 Tf
+1 0 0 1 20 100 Tm
+(455832		Duis aute irure dolor)Tj
+/F1 6 Tf
+1 0 0 1 20 94 Tm
+(936482		in reprehenderit in voluptate)Tj
+/F1 6 Tf
+1 0 0 1 20 88 Tm
+(324234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
+/F1 6 Tf
+1 0 0 1 20 82 Tm
+(447832		Duis aute irure dolor)Tj
+/F1 6 Tf
+1 0 0 1 20 76 Tm
+(936455		in reprehenderit in voluptate)Tj
+/F1 6 Tf
+1 0 0 1 20 70 Tm
+(d)Tj
+/F1 6 Tf
+1 0 0 1 20 64 Tm
+(cfxd)Tj
+/F1 6 Tf
+1 0 0 1 20 58 Tm
+(df)Tj
+/F1 6 Tf
+1 0 0 1 20 52 Tm
+(f)Tj
+/F1 6 Tf
+1 0 0 1 20 46 Tm
+(fd)Tj
+/F1 6 Tf
+1 0 0 1 20 40 Tm
+(fd)Tj
 ET
 endstream
 endobj
@@ -172,290 +266,182 @@ BT
 /F1 10 Tf
 1 0 0 1 20 20 Tm
 (THIS IS A FOOTER)Tj
-/F1 12 Tf
+20 35 m 460 35 l h S
+/F1 6 Tf
+1 0 0 1 20 594 Tm
+(f)Tj
+/F1 6 Tf
 1 0 0 1 20 588 Tm
-(936482-01	in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 576 Tm
-(167234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 564 Tm
-(455832		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 552 Tm
-(936482		in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 540 Tm
-(324234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 528 Tm
-(447832		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 516 Tm
-(936455		in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 504 Tm
-(167234          ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 492 Tm
-(447832		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 480 Tm
-(936482		in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 468 Tm
-(167234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 456 Tm
-(447842		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 444 Tm
-(933482-02	in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 432 Tm
-(888234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 420 Tm
-(474532		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 408 Tm
-(936482		in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 396 Tm
-(557234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 384 Tm
-(231832		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 372 Tm
-(936482-01	in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 360 Tm
-(167234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 348 Tm
-(455832		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 336 Tm
-(936482		in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 324 Tm
-(324234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
-/F1 12 Tf
-1 0 0 1 20 312 Tm
-(447832		Duis aute irure dolor)Tj
-/F1 12 Tf
-1 0 0 1 20 300 Tm
-(936455		in reprehenderit in voluptate)Tj
-/F1 12 Tf
-1 0 0 1 20 288 Tm
-(d)Tj
-/F1 12 Tf
-1 0 0 1 20 276 Tm
-(cfxd)Tj
-/F1 12 Tf
-1 0 0 1 20 264 Tm
-(df)Tj
-/F1 12 Tf
-1 0 0 1 20 252 Tm
-(f)Tj
-/F1 12 Tf
-1 0 0 1 20 240 Tm
-(fd)Tj
-/F1 12 Tf
-1 0 0 1 20 228 Tm
-(fd)Tj
-/F1 12 Tf
-1 0 0 1 20 216 Tm
-(f)Tj
-/F1 12 Tf
-1 0 0 1 20 204 Tm
 (ddf)Tj
-/F1 12 Tf
-1 0 0 1 20 192 Tm
+/F1 6 Tf
+1 0 0 1 20 582 Tm
 (fd)Tj
-/F1 12 Tf
-1 0 0 1 20 180 Tm
-(df)Tj
-/F1 12 Tf
-1 0 0 1 20 168 Tm
-(df)Tj
-/F1 12 Tf
-1 0 0 1 20 156 Tm
-(df)Tj
-/F1 12 Tf
-1 0 0 1 20 144 Tm
-(fd)Tj
-/F1 12 Tf
-1 0 0 1 20 132 Tm
-(df)Tj
-/F1 12 Tf
-1 0 0 1 20 120 Tm
-(df)Tj
-/F1 12 Tf
-1 0 0 1 20 108 Tm
-(df)Tj
-/F1 12 Tf
-1 0 0 1 20 96 Tm
-(df)Tj
-/F1 12 Tf
-1 0 0 1 20 84 Tm
-(df)Tj
-/F1 12 Tf
-1 0 0 1 20 72 Tm
-(f)Tj
-/F1 12 Tf
-1 0 0 1 20 60 Tm
-(dg)Tj
-/F1 12 Tf
-1 0 0 1 20 48 Tm
-(hf)Tj
-/F1 12 Tf
-1 0 0 1 20 36 Tm
-(gh)Tj
-ET
-endstream
-endobj
-
-8 0 obj
-<<
-/Length 53
->>
-stream
-BT
-/F1 20 Tf
-1 0 0 1 20 610 Tm
-(THIS IS A HEADER)Tj
-/F1 10 Tf
-1 0 0 1 20 20 Tm
-(THIS IS A FOOTER)Tj
-/F1 12 Tf
-1 0 0 1 20 588 Tm
-(d)Tj
-/F1 12 Tf
+/F1 6 Tf
 1 0 0 1 20 576 Tm
-(fgh)Tj
-/F1 12 Tf
+(df)Tj
+/F1 6 Tf
+1 0 0 1 20 570 Tm
+(df)Tj
+/F1 6 Tf
 1 0 0 1 20 564 Tm
-(d)Tj
-/F1 12 Tf
+(df)Tj
+/F1 6 Tf
+1 0 0 1 20 558 Tm
+(fd)Tj
+/F1 6 Tf
 1 0 0 1 20 552 Tm
-(fgh)Tj
-/F1 12 Tf
+(df)Tj
+/F1 6 Tf
+1 0 0 1 20 546 Tm
+(df)Tj
+/F1 6 Tf
 1 0 0 1 20 540 Tm
 (df)Tj
-/F1 12 Tf
+/F1 6 Tf
+1 0 0 1 20 534 Tm
+(df)Tj
+/F1 6 Tf
 1 0 0 1 20 528 Tm
-(gh)Tj
-/F1 12 Tf
+(df)Tj
+/F1 6 Tf
+1 0 0 1 20 522 Tm
+(f)Tj
+/F1 6 Tf
 1 0 0 1 20 516 Tm
-(dfg)Tj
-/F1 12 Tf
+(dg)Tj
+/F1 6 Tf
+1 0 0 1 20 510 Tm
+(hf)Tj
+/F1 6 Tf
 1 0 0 1 20 504 Tm
-(h)Tj
-/F1 12 Tf
+(gh)Tj
+/F1 6 Tf
+1 0 0 1 20 498 Tm
+(d)Tj
+/F1 6 Tf
 1 0 0 1 20 492 Tm
-(dfg)Tj
-/F1 12 Tf
+(fgh)Tj
+/F1 6 Tf
+1 0 0 1 20 486 Tm
+(d)Tj
+/F1 6 Tf
 1 0 0 1 20 480 Tm
-(hd)Tj
-/F1 12 Tf
+(fgh)Tj
+/F1 6 Tf
+1 0 0 1 20 474 Tm
+(df)Tj
+/F1 6 Tf
 1 0 0 1 20 468 Tm
-(fg)Tj
-/F1 12 Tf
+(gh)Tj
+/F1 6 Tf
+1 0 0 1 20 462 Tm
+(dfg)Tj
+/F1 6 Tf
 1 0 0 1 20 456 Tm
-(hd)Tj
-/F1 12 Tf
+(h)Tj
+/F1 6 Tf
+1 0 0 1 20 450 Tm
+(dfg)Tj
+/F1 6 Tf
 1 0 0 1 20 444 Tm
+(hd)Tj
+/F1 6 Tf
+1 0 0 1 20 438 Tm
 (fg)Tj
-/F1 12 Tf
+/F1 6 Tf
 1 0 0 1 20 432 Tm
 (hd)Tj
-/F1 12 Tf
-1 0 0 1 20 420 Tm
+/F1 6 Tf
+1 0 0 1 20 426 Tm
 (fg)Tj
-/F1 12 Tf
+/F1 6 Tf
+1 0 0 1 20 420 Tm
+(hd)Tj
+/F1 6 Tf
+1 0 0 1 20 414 Tm
+(fg)Tj
+/F1 6 Tf
 1 0 0 1 20 408 Tm
 (hd)Tj
-/F1 12 Tf
+/F1 6 Tf
+1 0 0 1 20 402 Tm
+(fgh)Tj
+/F1 6 Tf
 1 0 0 1 20 396 Tm
-(fgh)Tj
-/F1 12 Tf
-1 0 0 1 20 384 Tm
 (d)Tj
-/F1 12 Tf
-1 0 0 1 20 372 Tm
+/F1 6 Tf
+1 0 0 1 20 390 Tm
 (fgh)Tj
-/F1 12 Tf
+/F1 6 Tf
+1 0 0 1 20 384 Tm
+(df)Tj
+/F1 6 Tf
+1 0 0 1 20 378 Tm
+(gh)Tj
+/F1 6 Tf
+1 0 0 1 20 372 Tm
+(df)Tj
+/F1 6 Tf
+1 0 0 1 20 366 Tm
+(gh)Tj
+/F1 6 Tf
 1 0 0 1 20 360 Tm
 (df)Tj
-/F1 12 Tf
-1 0 0 1 20 348 Tm
+/F1 6 Tf
+1 0 0 1 20 354 Tm
 (gh)Tj
-/F1 12 Tf
+/F1 6 Tf
+1 0 0 1 20 348 Tm
+(df)Tj
+/F1 6 Tf
+1 0 0 1 20 342 Tm
+(gh)Tj
+/F1 6 Tf
 1 0 0 1 20 336 Tm
 (df)Tj
-/F1 12 Tf
+/F1 6 Tf
+1 0 0 1 20 330 Tm
+(gh)Tj
+/F1 6 Tf
 1 0 0 1 20 324 Tm
-(gh)Tj
-/F1 12 Tf
+(d)Tj
+/F1 6 Tf
+1 0 0 1 20 318 Tm
+(fgh)Tj
+/F1 6 Tf
 1 0 0 1 20 312 Tm
-(df)Tj
-/F1 12 Tf
+(d)Tj
+/F1 6 Tf
+1 0 0 1 20 306 Tm
+(fgh)Tj
+/F1 6 Tf
 1 0 0 1 20 300 Tm
-(gh)Tj
-/F1 12 Tf
+(d)Tj
+/F1 6 Tf
+1 0 0 1 20 294 Tm
+(fgh)Tj
+/F1 6 Tf
 1 0 0 1 20 288 Tm
-(df)Tj
-/F1 12 Tf
-1 0 0 1 20 276 Tm
-(gh)Tj
-/F1 12 Tf
-1 0 0 1 20 264 Tm
-(df)Tj
-/F1 12 Tf
-1 0 0 1 20 252 Tm
-(gh)Tj
-/F1 12 Tf
-1 0 0 1 20 240 Tm
 (d)Tj
-/F1 12 Tf
-1 0 0 1 20 228 Tm
-(fgh)Tj
-/F1 12 Tf
-1 0 0 1 20 216 Tm
-(d)Tj
-/F1 12 Tf
-1 0 0 1 20 204 Tm
-(fgh)Tj
-/F1 12 Tf
-1 0 0 1 20 192 Tm
-(d)Tj
-/F1 12 Tf
-1 0 0 1 20 180 Tm
-(fgh)Tj
-/F1 12 Tf
-1 0 0 1 20 168 Tm
-(d)Tj
-/F1 12 Tf
-1 0 0 1 20 156 Tm
+/F1 6 Tf
+1 0 0 1 20 282 Tm
 (fg)Tj
 ET
 endstream
 endobj
 
-9 0 obj
+7 0 obj
 <<
 /Type /Pages
-/Kids [ 3 0 R 5 0 R 7 0 R ]
-/Count 3
+/Kids [ 3 0 R 5 0 R ]
+/Count 2
 >>
 endobj
 
 3 0 obj
 <<
 /Type /Page
-/Parent 9 0 R
+/Parent 7 0 R
 /MediaBox [ 0 0 480 640 ]
 /Resources 2 0 R
 /Contents 4 0 R
@@ -465,34 +451,24 @@ endobj
 5 0 obj
 <<
 /Type /Page
-/Parent 9 0 R
+/Parent 7 0 R
 /MediaBox [ 0 0 480 640 ]
 /Resources 2 0 R
 /Contents 6 0 R
 >>
 endobj
 
-7 0 obj
-<<
-/Type /Page
-/Parent 9 0 R
-/MediaBox [ 0 0 480 640 ]
-/Resources 2 0 R
-/Contents 8 0 R
->>
-endobj
-
-10 0 obj
+8 0 obj
 <<
 /Type /Catalog
-/Pages 9 0 R
+/Pages 7 0 R
 >>
 endobj
 
 trailer
 <<
-/Root 10 0 R
-/Size 11
+/Root 8 0 R
+/Size 9
 >>
 
 %%EOF

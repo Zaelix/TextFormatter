@@ -16,7 +16,7 @@ namespace TTPDF
         private string outputStreamPath = App.outputDirectory + @"\" + App.outputFileName;
         public FileStream outFileStream;
 
-        //string fileStart = "%PDF-1.4\r\n%%EOF\r\n";
+        //string fileStart = "%PDF-1.6\r\n%%EOF\r\n";
         public static string pagesRefObj = "";
         public static string resourceRefObj = "";
         public static string catalogRefObj = "";
@@ -36,7 +36,7 @@ namespace TTPDF
             outFileStream = new FileStream(outputStreamPath, FileMode.Create, FileAccess.Write);
 
             //Begin the PDF file
-            FileStreamWrite(outFileStream, "%PDF-1.4\r\n");         
+            FileStreamWrite(outFileStream, "%PDF-1.6\r\n");         
 
             //Create font objects.
             FileStreamWrite(outFileStream, CreateFontObject());
@@ -68,16 +68,16 @@ namespace TTPDF
             while (sr.Peek() >= 0)
             {
                 strLine = sr.ReadLine();
-                if (strLine.Contains("@") || height <= 40) {
-                    FileStreamWrite(outFileStream, pages[page_Count-1].EndContentObj());
-                    FileStreamWrite(outFileStream, "\r\n");
+                if (strLine.Contains(@"<PDF_NEW_PAGE>") || height <= 40) {
+                    FileStreamWrite(outFileStream, pages[page_Count-1].EndContentObj()+ "\r\n");
                     IncrementPageCount();
                     pages[page_Count-1] = new Page(480, 640);
                     FileStreamWrite(outFileStream, pages[page_Count-1].StartContentObj());
-                    CreateHeader(pages[page_Count - 2].GetHeader(), page_Count - 1, outFileStream);
-                    CreateFooter(pages[page_Count - 2].GetFooter(), page_Count - 1, outFileStream);
-                    strLine = strLine.Replace("@", "");
                     height = 600;
+                    pages[page_Count-1].SetFontSize(pages[page_Count - 2].GetFontSize());
+                    CreateHeader(pages[page_Count-2].GetHeader(), page_Count - 1, outFileStream);
+                    CreateFooter(pages[page_Count-2].GetFooter(), page_Count - 1, outFileStream);
+                    strLine = strLine.Replace(@"<PDF_NEW_PAGE>", "");
                 }
                 if (strLine.Contains(@"<PDF_FONT_TAG_S>")){
                     strLine = pages[page_Count-1].ChangeFontSize(strLine);
@@ -122,16 +122,12 @@ namespace TTPDF
         }
         public static void CreateHeader(string content, int page_ID, FileStream oFS) {
             pages[page_ID].SetHeader(content);
-            pages[page_ID].SetFontSize(20);
             FileStreamWrite(oFS, pages[page_ID].CreateHeader(content));
-            pages[page_ID].SetFontSize(12);
         }
         public static void CreateFooter(string content, int page_ID, FileStream oFS)
         {
             pages[page_ID].SetFooter(content);
-            pages[page_ID].SetFontSize(10);
             FileStreamWrite(oFS, pages[page_ID].CreateFooter(content));
-            pages[page_ID].SetFontSize(12);
         }
         public static string CreateResourceObject() {
             string objContent = PDFMaker.GetObjCount() + " 0 obj\r\n<<\r\n/ProcSet[/PDF/Text]\r\n/Font <</F1 " + fonts[0] + " >>\r\n>>\r\nendobj\r\n";
@@ -195,7 +191,9 @@ namespace TTPDF
     }
     public class Page {
         string header;
+        int headerSize = 20;
         string footer;
+        int footerSize = 10;
         int obj_ID;
         int fontSize = 12;
         int width;
@@ -241,7 +239,7 @@ namespace TTPDF
             double fontWidth = 1;                   //Scale Multiplier. 1 = Normal size
             double fontHeight = 1;                  //Scale Multiplier. 1 = Normal size
             double italics = 0;                     //Multiplier. 0 = No italics, 1 = EXTREME italics
-            string setup = "/F1 " + fontSize + " Tf\r\n" + fontWidth + " 0 " + italics + " " + fontHeight + " " + indentPixels + " " + (640 - fontSize - 10) + " Tm\r\n";
+            string setup = "/F1 " + headerSize + " Tf\r\n" + fontWidth + " 0 " + italics + " " + fontHeight + " " + indentPixels + " " + (640 - headerSize - 10) + " Tm\r\n";
             string lineContent = "(" + line + ")Tj\r\n";
             return setup + lineContent;
         }
@@ -251,9 +249,10 @@ namespace TTPDF
             double fontWidth = 1;                   //Scale Multiplier. 1 = Normal size
             double fontHeight = 1;                  //Scale Multiplier. 1 = Normal size
             double italics = 0;                     //Multiplier. 0 = No italics, 1 = EXTREME italics
-            string setup = "/F1 " + fontSize + " Tf\r\n" + fontWidth + " 0 " + italics + " " + fontHeight + " " + indentPixels + " " + (fontSize + 10) + " Tm\r\n";
+            string setup = "/F1 " + footerSize + " Tf\r\n" + fontWidth + " 0 " + italics + " " + fontHeight + " " + indentPixels + " " + (footerSize + 10) + " Tm\r\n";
             string lineContent = "(" + line + ")Tj\r\n";
-            return setup + lineContent;
+            string drawLine = "20 " + (footerSize + 25) + " m 460 35 l h S\r\n";
+            return setup + lineContent + drawLine;
         }
         public void SetContent(string cont) {
             this.content = cont;
