@@ -17,6 +17,8 @@ namespace TTPDF
         public FileStream outFileStream;
 
         //string fileStart = "%PDF-1.6\r\n%%EOF\r\n";
+        public static string headerText = "";
+        public static string footerText = "";
         public static string pagesRefObj = "";
         public static string resourceRefObj = "";
         public static string catalogRefObj = "";
@@ -48,21 +50,24 @@ namespace TTPDF
 
             //Create starting text content object and the containing Page class instance.
             pages[0] = new Page(480, 640);
-            FileStreamWrite(outFileStream, pages[0].StartContentObj());
+            //FileStreamWrite(outFileStream, pages[0].StartContentObj());
+            string pageText = pages[0].StartContentObj();
             string strLine = string.Empty;
             int height = 600;
 
             //Create Header for the pages
             if (sr.Peek() >= 0){
                 strLine = sr.ReadLine();
-                CreateHeader(strLine, 0, outFileStream);
+                headerText = strLine;
+                pageText = pageText + CreateHeader(strLine, 0, outFileStream);
             }
 
             //Create Footer for the pages
             if (sr.Peek() >= 0){
                 strLine = sr.ReadLine();
-                pages[0].SetFooter(strLine);
-                CreateFooter(strLine, 0, outFileStream);
+                footerText = strLine;
+                //pages[0].SetFooter(strLine);
+                //CreateFooter(strLine, 0, outFileStream);
             }
 
             //Complete the remainder of the text content objects and Page class instances
@@ -70,29 +75,42 @@ namespace TTPDF
             {
                 strLine = sr.ReadLine();
                 if (strLine.Contains(@"<PDF_NEW_PAGE>") || height <= 50) {
-                    FileStreamWrite(outFileStream, pages[page_Count-1].EndContentObj()+ "\r\n");
+                    //FileStreamWrite(outFileStream, pages[page_Count-1].EndContentObj()+ "\r\n");
+                    pages[page_Count - 1].SetContent(pageText);
+                    pageText = "";
                     IncrementPageCount();
                     pages[page_Count-1] = new Page(480, 640);
-                    FileStreamWrite(outFileStream, pages[page_Count-1].StartContentObj());
+                    //FileStreamWrite(outFileStream, pages[page_Count-1].StartContentObj());
+                    pageText = pageText + pages[page_Count - 1].StartContentObj();
                     height = 600;
                     pages[page_Count-1].SetFontSize(pages[page_Count - 2].GetFontSize());
-                    CreateHeader(pages[page_Count-2].GetHeader(), page_Count - 1, outFileStream);
-                    pages[page_Count - 1].SetFooter(pages[page_Count - 2].GetFooter());
-                    CreateFooter(pages[page_Count-2].GetFooter(), page_Count - 1, outFileStream);
+                    pageText = pageText + CreateHeader(headerText, page_Count - 1, outFileStream);
+                    //pages[page_Count - 1].SetFooter(pages[page_Count - 2].GetFooter());
+                    //CreateFooter(pages[page_Count-2].GetFooter(), page_Count - 1, outFileStream);
                     strLine = strLine.Replace(@"<PDF_NEW_PAGE>", "");
                 }
                 if (strLine.Contains(@"<PDF_FONT_TAG_S>")){
                     strLine = pages[page_Count-1].ChangeFontSize(strLine);
                 }
                 height = height - pages[page_Count - 1].GetFontSize()-1;
-                FileStreamWrite(outFileStream, pages[page_Count - 1].InsertContentLine(strLine, height));
+                //FileStreamWrite(outFileStream, pages[page_Count - 1].InsertContentLine(strLine, height));
+                pageText = pageText + pages[page_Count - 1].InsertContentLine(strLine, height);
             }
-            FileStreamWrite(outFileStream, pages[page_Count-1].EndContentObj());
+            pages[page_Count - 1].SetContent(pageText);
+            //FileStreamWrite(outFileStream, pages[page_Count-1].EndContentObj());
             FileStreamWrite(outFileStream, "\r\n");
 
             //Create Footers
             foreach (Page p in pages) {
-                //CreateFooter(p.GetFooter(), p.GetID(), outFileStream);
+                if (p != null)
+                {
+                    string content = p.GetContent();
+                    string footer = p.CreateFooter(footerText);
+                    string objEnd = p.EndContentObj();
+                    p.SetContent(p.GetContent() + p.CreateFooter(footerText) + p.EndContentObj());
+                    FileStreamWrite(outFileStream, p.GetContent());
+                    FileStreamWrite(outFileStream, "\r\n");
+                }
             }
 
             //Create Pages object from Page class instances found during text content creation. Update Page objects to have Pages object ID
@@ -127,14 +145,16 @@ namespace TTPDF
             outFileStream.Write(buffer, 0, buffer.Length);
 
         }
-        public static void CreateHeader(string content, int page_ID, FileStream oFS) {
+        public static string CreateHeader(string content, int page_ID, FileStream oFS) {
             pages[page_ID].SetHeader(content);
-            FileStreamWrite(oFS, pages[page_ID].CreateHeader(content));
+            //FileStreamWrite(oFS, pages[page_ID].CreateHeader(content));
+            return pages[page_ID].CreateHeader(content);
         }
-        public static void CreateFooter(string content, int page_ID, FileStream oFS)
+        public static string CreateFooter(string content, int page_ID, FileStream oFS)
         {
-            pages[page_ID].SetFooter(content);
-            FileStreamWrite(oFS, pages[page_ID].CreateFooter(content));
+            //pages[page_ID-1].SetFooter(content);
+            //FileStreamWrite(oFS, pages[page_ID].CreateFooter(content));
+            return pages[page_ID].CreateFooter(content);
         }
         public static string CreateResourceObject() {
             string objContent = PDFMaker.GetObjCount() + " 0 obj\r\n<<\r\n/ProcSet[/PDF/Text]\r\n/Font <</F1 " + fonts[0] + " >>\r\n>>\r\nendobj\r\n";
@@ -197,9 +217,9 @@ namespace TTPDF
         }
     }
     public class Page {
-        string header;
+        string header = "";
         int headerSize = 20;
-        string footer;
+        string footer = "";
         int footerSize = 10;
         int obj_ID;
         int page_ID;
@@ -262,12 +282,15 @@ namespace TTPDF
             string setup = "/F1 " + footerSize + " Tf\r\n" + fontWidth + " 0 " + italics + " " + fontHeight + " " + indentPixels + " " + (footerSize + 10) + " Tm\r\n";
             string lineContent = "(" + line + ")Tj\r\n";
             string drawLine = "20 " + (footerSize + 25) + " m 460 35 l h S\r\n";
-            //string pageSetup = "/F1 " + footerSize + " Tf\r\n" + fontWidth + " 0 " + italics + " " + fontHeight + " " + 430 + " " + (footerSize + 10) + " Tm\r\n";
-            //string pageDisplay = "(" + page_ID + "/" + PDFMaker.GetPageCount() + ")Tj\r\n"; ;
-            return setup + lineContent + drawLine;
+            string pageSetup = "/F1 " + footerSize + " Tf\r\n" + fontWidth + " 0 " + italics + " " + fontHeight + " " + 390 + " " + (footerSize + 10) + " Tm\r\n";
+            string pageDisplay = "(Page " + page_ID + " of " + PDFMaker.GetPageCount() + ")Tj\r\n"; ;
+            return setup + lineContent + drawLine + pageSetup + pageDisplay;
         }
         public void SetContent(string cont) {
             this.content = cont;
+        }
+        public string GetContent() {
+            return content;
         }
         public void SetParentRefObj(string pRO) {
             this.parentRefObj = pRO;

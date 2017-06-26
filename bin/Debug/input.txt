@@ -1,5 +1,5 @@
 THIS IS A HEADER
-THIS IS A FOOTER <PDF_PAGE_NUMBER> of ???
+THIS IS A FOOTER
 <PDF_FONT_TAG_S>18<PDF_FONT_TAG_E>Lorem Ipsum Dolor Sit Amet
 Consectetur
 _________________________________________________________________________

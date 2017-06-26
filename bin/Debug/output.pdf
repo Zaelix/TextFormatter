@@ -15,6 +15,7 @@ endobj
 >>
 endobj
 
+
 4 0 obj
 <<
 /Length 53
@@ -24,10 +25,6 @@ BT
 /F1 20 Tf
 1 0 0 1 20 610 Tm
 (THIS IS A HEADER)Tj
-/F1 10 Tf
-1 0 0 1 20 20 Tm
-(THIS IS A FOOTER 1 of ???)Tj
-20 35 m 460 35 l h S
 /F1 18 Tf
 1 0 0 1 20 581 Tm
 (Lorem Ipsum Dolor Sit Amet)Tj
@@ -214,6 +211,13 @@ BT
 /F1 6 Tf
 1 0 0 1 20 50 Tm
 (936482-01	in reprehenderit in voluptate)Tj
+/F1 10 Tf
+1 0 0 1 20 20 Tm
+(THIS IS A FOOTER)Tj
+20 35 m 460 35 l h S
+/F1 10 Tf
+1 0 0 1 390 20 Tm
+(Page 1 of 2)Tj
 ET
 endstream
 endobj
@@ -227,10 +231,6 @@ BT
 /F1 20 Tf
 1 0 0 1 20 610 Tm
 (THIS IS A HEADER)Tj
-/F1 10 Tf
-1 0 0 1 20 20 Tm
-(THIS IS A FOOTER 2 of ???)Tj
-20 35 m 460 35 l h S
 /F1 6 Tf
 1 0 0 1 20 593 Tm
 (167234		ullamco laboris nisi ut aliquip ex ea commodo consequat)Tj
@@ -426,6 +426,13 @@ BT
 /F1 6 Tf
 1 0 0 1 20 145 Tm
 (fg)Tj
+/F1 10 Tf
+1 0 0 1 20 20 Tm
+(THIS IS A FOOTER)Tj
+20 35 m 460 35 l h S
+/F1 10 Tf
+1 0 0 1 390 20 Tm
+(Page 2 of 2)Tj
 ET
 endstream
 endobj
